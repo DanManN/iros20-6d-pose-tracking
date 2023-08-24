@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 URL='https://archive.cs.rutgers.edu/archive/a/2020/pracsys/Bowen/iros2020/YCB_traindata/'
 for x in $(rclone lsf --http-url $URL :http: 2> /dev/null)
 do

@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 for x in $(ls ../YCB/CADmodels/)
 do
 	NUM=$(expr ${x:0:3} + 0)
