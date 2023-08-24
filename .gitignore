@@ -1,5 +1,10 @@
 __pycache__/
-*.blend*
 core
+*.zip
+*.blend*
+weights
+YCB/
+YCBInEOAT/
+train_data/
 generated_data/
 generated_data_pair/

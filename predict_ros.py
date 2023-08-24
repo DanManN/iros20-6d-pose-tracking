@@ -84,13 +84,13 @@ if __name__=="__main__":
 
   artifact_dir = f'{args.artifacts_folder}/artifacts-{args.artifact_id}'
   ckpt_dir = '{}/model_best_val.pth.tar'.format(artifact_dir)
-  config_path = '{}/code_backup{}/config.yml'.format(artifact_dir,args.artifact_id)
+  # config_path = '{}/code_backup{}/config.yml'.format(artifact_dir,args.artifact_id)
   mean_std_path = artifact_dir
 
   print('ckpt_dir:',ckpt_dir)
 
-  with open(config_path, 'r') as ff:
-    config = yaml.safe_load(ff)
+  # with open(config_path, 'r') as ff:
+  #   config = yaml.safe_load(ff)
 
   dataset_info_path = f"{artifact_dir}/code_backup{args.artifact_id}/dataset_info.yml"
   print('dataset_info_path',dataset_info_path)

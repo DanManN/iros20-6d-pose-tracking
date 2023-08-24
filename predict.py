@@ -426,6 +426,7 @@ def getResultsYcb():
 
 
 def predictSequenceYcb():
+  debug=False
   init = 'gt'
   seq_id = 50
   test_data_path = '{}/data_organized/%04d'.format(args.ycb_dir)%(seq_id)
@@ -636,8 +637,6 @@ if __name__ == '__main__':
   images_mean = np.load(os.path.join(mean_std_path, "mean.npy"))
   images_std = np.load(os.path.join(mean_std_path, "std.npy"))
 
-  # predictSequenceYcb()
+  predictSequenceYcb()
   # getResultsYcb()
-  predictSequenceMyData()
-
-
+  # predictSequenceMyData()
